@@ -19,7 +19,7 @@ const DetailPage = () => {
   }, []);
 
   useEffect(() => {
-    fetch('http://10.58.52.158:3002/products?type=코스강의&type=단과강의')
+    fetch('data/allLecture.json')
       .then(response => response.json())
       .then(data => {
         setLectures(data);
@@ -59,7 +59,7 @@ const DetailPage = () => {
   const runDrop2 = isOpen2 ? 'courseLectureDropsOn' : 'courseLectureDropsOff';
 
   const allLectures = () => {
-    fetch('http://10.58.52.158:3002/products?type=코스강의&type=단과강의')
+    fetch('http://10.58.52.247:3002/products?type=코스강의&type=단과강의')
       .then(response => response.json())
       .then(data => setLectures(data));
   };
@@ -85,7 +85,7 @@ const DetailPage = () => {
                 <div
                   onClick={() => {
                     fetch(
-                      'http://10.58.52.158:3002/products?name=한식&type=코스강의'
+                      'http://10.58.52.247:3002/products?name=한식&type=코스강의'
                     )
                       .then(response => response.json())
                       .then(data => setLectures(data));
@@ -97,7 +97,7 @@ const DetailPage = () => {
                 <div
                   onClick={() => {
                     fetch(
-                      'http://10.58.52.158:3002/products?name=중식&type=코스강의'
+                      'http://10.58.52.247:3002/products?name=중식&type=코스강의'
                     )
                       .then(response => response.json())
                       .then(data => setLectures(data));
@@ -109,7 +109,7 @@ const DetailPage = () => {
                 <div
                   onClick={() => {
                     fetch(
-                      'http://10.58.52.158:3002/products?name=일식&type=코스강의'
+                      'http://10.58.52.247:3002/products?name=일식&type=코스강의'
                     )
                       .then(response => response.json())
                       .then(data => setLectures(data));
@@ -121,7 +121,7 @@ const DetailPage = () => {
                 <div
                   onClick={() => {
                     fetch(
-                      'http://10.58.52.158:3002/products?name=양식&type=코스강의'
+                      'http://10.58.52.247:3002/products?name=양식&type=코스강의'
                     )
                       .then(response => response.json())
                       .then(data => setLectures(data));
@@ -133,7 +133,7 @@ const DetailPage = () => {
                 <div
                   onClick={() => {
                     fetch(
-                      'http://10.58.52.158:3002/products?name=멕시코&type=코스강의'
+                      'http://10.58.52.247:3002/products?name=멕시코&type=코스강의'
                     )
                       .then(response => response.json())
                       .then(data => setLectures(data));
@@ -154,7 +154,7 @@ const DetailPage = () => {
               <div
                 onClick={() => {
                   fetch(
-                    'http://10.58.52.158:3002/products?name=한식&type=단과강의'
+                    'http://10.58.52.247:3002/products?name=한식&type=단과강의'
                   )
                     .then(response => response.json())
                     .then(data => setLectures(data));
@@ -166,7 +166,7 @@ const DetailPage = () => {
               <div
                 onClick={() => {
                   fetch(
-                    'http://10.58.52.158:3002/products?name=중식&type=단과강의'
+                    'http://10.58.52.247:3002/products?name=중식&type=단과강의'
                   )
                     .then(response => response.json())
                     .then(data => setLectures(data));
@@ -178,7 +178,7 @@ const DetailPage = () => {
               <div
                 onClick={() => {
                   fetch(
-                    'http://10.58.52.158:3002/products?name=일식&type=단과강의'
+                    'http://10.58.52.247:3002/products?name=일식&type=단과강의'
                   )
                     .then(response => response.json())
                     .then(data => setLectures(data));
@@ -190,7 +190,7 @@ const DetailPage = () => {
               <div
                 onClick={() => {
                   fetch(
-                    'http://10.58.52.158:3002/products?name=양식&type=단과강의'
+                    'http://10.58.52.247:3002/products?name=양식&type=단과강의'
                   )
                     .then(response => response.json())
                     .then(data => setLectures(data));
@@ -202,7 +202,7 @@ const DetailPage = () => {
               <div
                 onClick={() => {
                   fetch(
-                    'http://10.58.52.158:3002/products?name=멕시코&type=단과강의'
+                    'http://10.58.52.247:3002/products?name=멕시코&type=단과강의'
                   )
                     .then(response => response.json())
                     .then(data => setLectures(data));

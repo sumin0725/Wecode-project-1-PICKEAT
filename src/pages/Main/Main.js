@@ -46,7 +46,7 @@ const Main = () => {
   }, []);
 
   useEffect(() => {
-    fetch('http://10.58.52.158:3002/products?type=코스강의')
+    fetch('data/bastLecture.json')
       .then(response => response.json())
       .then(data => {
         setBastLectureList(data);
@@ -54,7 +54,7 @@ const Main = () => {
   }, []);
 
   useEffect(() => {
-    fetch('http://10.58.52.158:3002/products?type=단과강의')
+    fetch('data/freeLecture.json')
       .then(response => response.json())
       .then(data => {
         setFreeLectureList(data);
